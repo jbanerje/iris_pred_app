@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <style>
+            body {
+                background-color:powderblue;
+                font-family: arial, sans-serif;
+            }
+            table, th, td {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+            }
+
+    </style>
+   <body >
+      <form action = "http://localhost:5000/result" method = "POST">
+        <p> <b><u>IRIS CLASSIFICATION</u></b></p>
+        <table>
+                <tr>
+                    <td align="right">Sepal Length :</td>
+                    <td align="left"><input type="text" name="Sepal Length" /></td>
+                </tr>
+                
+                <tr>
+                    <td align="right">Sepal Width :</td>
+                    <td align="left"><input type="text" name="Sepal Width" /></td>
+                </tr>
+                
+                <tr>
+                    <td align="right">Petal Length :</td>
+                    <td align="left"><input type="text" name="Petal Length" /></td>
+                </tr>
+                
+                <tr>
+                    <td align="right">Petal Width :</td>
+                    <td align="left"><input type="text" name="Petal Width" /></td>
+                </tr>
+        </table>
+        <p><input type = "Submit" value = "Submit" /></p>
+      </form>
+   </body>
+</html>

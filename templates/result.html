@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <style>
+            body {
+                background-color:powderblue;
+                font-family: arial, sans-serif;
+            }
+            
+            p {
+                font-family: arial, sans-serif;
+            }
+
+            table, th, td {
+                font-family: arial, sans-serif;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+            }
+
+    </style>
+   <body>
+        <p> <b><u>IRIS CLASSIFICATION</u></b></p>
+        <table style="width:20%" ; border = 1>
+            {% for key, value in result.items() %}
+                <tr>
+                <th> {{ key }} </th>
+                <td> {{ value }} </td>
+                </tr>
+            {% endfor %}
+        </table>
+        <h3> IRIS PREDICTION: {{ pred }}<h3></h3>
+   </body>
+</html>
